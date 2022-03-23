@@ -17,6 +17,7 @@ public class OrderController {
 
     @GetMapping("/{productId}/{userId}")
     public Order saveOrder(@PathVariable String productId, @PathVariable String userId){
+        System.out.println("nishizuibangde");
         return orderService.makeOrder(productId,userId);
     }
 }
